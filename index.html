@@ -111,7 +111,7 @@ tr:hover td{background:#f9f9f9}
         <div style="font-size:20px;font-weight:700" id="bpTitle"></div>
         <div style="font-size:13px;color:#888;margin-top:2px" id="bpSub"></div>
       </div>
-      <button class="back-btn" onclick="closeBrandPage()">← Orqaga</button>
+      
     </div>
     <div style="background:#fff;border-radius:12px;border:1px solid #e5e5e5;overflow:hidden;margin-bottom:1rem">
       <table>
@@ -124,7 +124,7 @@ tr:hover td{background:#f9f9f9}
         <tbody id="bpBody"></tbody>
       </table>
     </div>
-    <div style="text-align:center;font-size:12px;color:#aaa;padding:.5rem" id="bpNote"></div>
+    
   </div>
 </div>
 
@@ -390,7 +390,7 @@ function showBrandPage(key){
   icon.style.color=b.color.text;
   document.getElementById('bpTitle').textContent=b.name;
   document.getElementById('bpSub').textContent=b.products.length+' ta mahsulot';
-  document.getElementById('bpNote').textContent='Narxlar taxminiy · 1 USD = '+r.toLocaleString('uz-UZ')+' so\'m';
+
   const cats=[...new Set(b.products.map(p=>p.cat))];
   let rows='';
   cats.forEach(cat=>{
